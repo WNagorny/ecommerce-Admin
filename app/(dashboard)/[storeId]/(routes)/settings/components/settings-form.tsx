@@ -9,6 +9,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useParams, useRouter } from "next/navigation"
 
+import { ApiAlert } from '@/components/ui/api-alert'
 import { AlertModal } from '@/components/modals/alert-modal'
 import { Heading } from '@/components/ui/heading'
 import { Button } from '@/components/ui/button'
@@ -130,6 +131,12 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
 					</Button>
 				</form>
 			</Form>
+			<Separator/>
+			<ApiAlert 
+				   title="NEXT_PUBLIC_API_URL" 
+					variant="public" 
+					description={`${origin}/api/${params.storeId}`}
+			/>
 		</>
 	)
 }
