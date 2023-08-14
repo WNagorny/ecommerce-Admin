@@ -17,6 +17,8 @@ import { Separator } from '@/components/ui/separator'
 
 import { Input } from '@/components/ui/input'
 
+import {useOrigin} from "@/hooks/use-origin"
+
 import {
 	Form,
 	FormControl,
@@ -42,6 +44,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
 
 	const params = useParams()
 	const router = useRouter()
+	const origin = useOrigin()
 
 	const form = useForm<SettingsFormValues>({
 		resolver: zodResolver(formSchema),
