@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { AlertModal } from "@/components/modals/alert-modal";
 
-import { BillboardColumn } from "./colums";
+import { BillboardColumn } from "./columns";
 
 
 
@@ -27,6 +27,11 @@ interface CellActionProps {
  export const CellAction: React.FC<CellActionProps> = ({
    data,
 }) => {
+   const onCopy = (id:string) => {
+      navigator.clipboard.writeText(id);
+      toast.success('Billboard Id copied to clipboard.');
+    }
+
    return (
       <div>
             <DropdownMenu>
@@ -38,8 +43,9 @@ interface CellActionProps {
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
           <DropdownMenuLabel>Actions</DropdownMenuLabel>
+
           <DropdownMenuItem
-            
+            onClick={() => onCopy(data.id)}
           >
             <Copy className="mr-2 h-4 w-4" /> Copy Id
           </DropdownMenuItem>
@@ -58,3 +64,5 @@ interface CellActionProps {
       </div>
    )
 }
+
+
