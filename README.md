@@ -1,7 +1,5 @@
 # Responsive Admin Panel with Shadcn UI
 
-![Project Logo](link-to-your-logo.png)
-
 Welcome to the Responsive Admin Panel project with Shadcn UI! This versatile admin dashboard is designed to be your one-stop solution, serving as a Content Management System (CMS), Admin panel, and API hub. With a wide range of features, you can efficiently manage multiple vendors/stores, create and manage categories, products, filters, billboards, and much more.
 
 ## Key Features
@@ -40,7 +38,7 @@ Follow these steps to set up the project and start using the admin panel:
 
 1. Clone this repository to your local machine.
 
-git clone https://github.com/your-username/your-admin-panel.git
+git clone https://github.com/WNagorny/ecommerce-Admin.git
 
 2. Install the required dependencies.
 npm install
