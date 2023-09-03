@@ -42,12 +42,12 @@ git clone https://github.com/WNagorny/ecommerce-Admin.git
 
 2. Install the required dependencies.
 npm install
-# or
+ or
 yarn install
 
 3.Run the project.
 npm start
-# or
+or
 yarn start
 
 ## Learn More
