@@ -45,7 +45,7 @@ npm install
  or
 yarn install
 
-3.Run the project.
+3. Run the project.
 npm start
 or
 yarn start
